@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+
+body{
+    background: #fff;
+    color: #2b2a27;
+    font-family: "Arial", "Helvetica Neue", "sans-serif","Meiryo","Hiragino Sans";
+}
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: #2b2a27;
+}
+
+/*---------------------------------------------------------------
+mainvisual
+---------------------------------------------------------------*/
+#mainvisual img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+    margin-bottom: 80px;
+}
+
+/*---------------------------------------------------------------
+text
+---------------------------------------------------------------*/
+
+.text{
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 80px;
+}
+
+.text .site-title{
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.text p{
+    line-height: normal;
+}
+
+/*---------------------------------------------------------------
+image
+---------------------------------------------------------------*/
+
+.flex{
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.flex li{
+    width: calc(100%/3);
+}
+
+.flex li img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.text{
+    color: #2b2a27;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 80px;
+}
+
+.text a{
+    color: inherit;
+}
+
+.text .btn{
+    padding: 18px 60px;
+    border: solid 1px #2b2a27;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#footer{
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+    color: inherit;
+}
+
+#footer .sns{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+#footer .sns li{
+    margin: 0 10px;
+}
+
+#footer .sns a{
+    color: inherit;
+}
+
+
+/*---------------------------------------------------------------
+sp
+---------------------------------------------------------------*/
+
+@media screen and (max-width: 834px){
+/*---------------------------------------------------------------
+image
+---------------------------------------------------------------*/    
+    .flex{
+        flex-direction: column;
+    }
+    .flex li{
+        width: 100%;
+    }
+}
